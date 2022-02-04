@@ -16,7 +16,7 @@ sum = 0
 # for text in twitter_df:
 #     blob = TextBlob(text)
 #     print(blob.sentiment.polarity)
-text = 'Thanks for the submission. Glad you are recovering.'
+text = 'we are mad.'
 blob = TextBlob(text)
 print(blob.sentiment)
     

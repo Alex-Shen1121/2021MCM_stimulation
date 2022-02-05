@@ -13,10 +13,11 @@ twitter_df = twitter_df.loc[twitter_df['Lab Comments'] != ' ']['Lab Comments']
 
 from textblob import TextBlob
 sum = 0
-# for text in twitter_df:
-#     blob = TextBlob(text)
-#     print(blob.sentiment.polarity)
-text = 'we are mad.'
-blob = TextBlob(text)
-print(blob.sentiment)
+for text in twitter_df[:]:
+    blob = TextBlob(text)
+    print(text)
+    print(blob.sentiment)
+# text = ''
+# blob = TextBlob(text)
+# print(blob.sentiment)
     
